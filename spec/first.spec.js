@@ -1,4 +1,4 @@
-describe('frist test', () => {
+xdescribe('frist test', () => {
     it('hello jasmine', () => {
         expect(true).toBe(true);
     });
