@@ -34,3 +34,18 @@ describe('before & after', () => {
         expect(foo).toEqual(1);
     });
 });
+
+describe('before all', () => {
+    var foo = 0;
+    beforeAll(() => {
+        foo += 1;
+    });
+
+    it('each 1', () => {
+        expect(foo).toEqual(1);
+    })
+
+    it('each 2', () => {
+        expect(foo).not.toEqual(2);
+    });
+})
