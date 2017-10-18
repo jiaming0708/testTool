@@ -35,7 +35,7 @@ describe('before & after', () => {
     });
 });
 
-describe('before all', () => {
+fdescribe('before all', () => {
     var foo = 0;
     beforeAll(() => {
         foo += 1;
