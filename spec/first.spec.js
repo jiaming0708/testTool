@@ -15,3 +15,22 @@ describe('frist test', () => {
         expect(pi).toBeGreaterThan(e);
     })
 });
+
+describe('before & after', () => {
+    var foo = 0;
+    beforeEach(() => {
+        foo += 1;
+    });
+
+    afterEach(() => {
+        foo = 0;
+    })
+
+    it('each', () => {
+        expect(foo).toEqual(1);
+    });
+
+    it('more each', () => {
+        expect(foo).toEqual(1);
+    });
+});
