@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "server": "webdriver-manager start",
+    "e2e": "protractor conf.js"
   },
   "author": "",
   "license": "ISC",
