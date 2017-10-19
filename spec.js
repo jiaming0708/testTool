@@ -1,6 +1,10 @@
 describe('Protractor Demo App', function () {
-    it('should have a title', function () {
+    beforeEach(() => {
         browser.get('http://juliemr.github.io/protractor-demo/');
-        expect(browser.getTitle()).toEqual('Super Calculator');
+    })
+    it('first input', () => {
+        let first = element(by.css('.input-small'));
+        first.sendKeys('2');
+        expect(first.getAttribute('value')).toEqual('2');
     });
 });
